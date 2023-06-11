@@ -19,7 +19,7 @@ export default function Projects() {
         </ul>
       </div>
 
-      <div className="py-16 mx-40 sm:visible hidden">
+      <div className="py-16 mx-40 sm:block hidden">
         <ul className="flex gap-10 justify-center">
           <li><Card title="WARCORD" image="/warcord.webp" desc="An NPM Library created to be an alternative option to the WarGaming API." tec="TYPESCRIPT" link="https://github.com/Warcord/WarCord-Lib" /></li>
           <li><Card title="Red Dragon Bot" image="/reddragon.webp" desc="My first project, not finished, was a discord bot." tec="JAVASCRIPT" /></li>
