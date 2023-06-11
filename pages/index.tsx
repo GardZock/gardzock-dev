@@ -1,9 +1,56 @@
 import Image from "next/image"
 import Link from "next/link"
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { GiConfirmed } from 'react-icons/gi'
 import { CgMail } from 'react-icons/cg'
+import { useState } from 'react'
 
 export default function Home() {
+
+
+  const [text, changeText] = useState(
+    (
+      <>
+        <CgMail size="40" color="white" /> Copy E-Mail
+      </>
+    )
+  )
+
+  const copy = () => {
+    const el = document.getElementById('copyIcon')
+    if (!el) return navigator.clipboard.writeText("gardzock.contato@gmail.com");
+    const elements = {
+      toPut: (
+        <>
+          <GiConfirmed size="30" color="white" /> Copied!
+        </>
+      ),
+      default: (
+        <>
+          <CgMail size="40" color="white" /> Copy E-Mail
+        </>
+      )
+    }
+
+    navigator.clipboard.writeText("gardzock.contato@gmail.com")
+    changeText(
+      (
+        <>
+          {elements.toPut}
+        </>
+      )
+    )
+    setTimeout(() => {
+      changeText(
+        (
+          <>
+            {elements.default}
+          </>
+        )
+      )
+    }, 2000)
+
+  }
 
   return (
     <main className="m-auto justify-center items-center  py-16">
@@ -29,7 +76,7 @@ export default function Home() {
           </Link>
         </ul>
         <div className="text-center flex justify-center items-center py-4">
-          <Link href="mailto:gardzock.contato@gmail.com" className="flex items-center border-2 p-2 rounded-md text-white font-bold gap-2"><CgMail size="40" color="white" />E-Mail</Link>
+          <button id="copyIcon" onClick={() => copy()} className="flex items-center border-2 p-2 rounded-md text-white font-bold gap-2">{text}</button>
         </div>
       </div>
     </main>
