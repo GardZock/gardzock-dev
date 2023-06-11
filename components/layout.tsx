@@ -1,10 +1,5 @@
-import Navbar from './nav'
-import Head from 'next/head'
-
-export const metadata = {
-    title: 'GardZock Developer',
-    description: 'Portfolio of Miguel Otavio.',
-}
+import Navbar from './nav';
+import Head from 'next/head';
 
 export default function Layout({
     children,
@@ -14,8 +9,9 @@ export default function Layout({
   return (
     <>
       <Head>
-        <title> | GardZock Dev</title>
+        <title> | GardZock Developer</title>
         <link rel="shortcut icon" href="/favicon.svg" />
+        <meta name="description" content="Portfolio of Miguel Otavio."/>
       </Head>
       <Navbar />
       <>{children}</>
