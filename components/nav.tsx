@@ -1,4 +1,3 @@
-"use client"
 import { NextComponentType } from 'next';
 import Image from 'next/image';
 import Link from 'next/link'
