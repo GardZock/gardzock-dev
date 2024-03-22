@@ -1,10 +1,6 @@
 import { useState } from "react"
 import DiscordService from "../services/discord"
 import Mes from "@/components/message"
-import Link from "next/link"
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-import { GiConfirmed } from 'react-icons/gi'
-import { CgMail } from 'react-icons/cg'
 
 export default function Contact() {
 

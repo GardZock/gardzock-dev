@@ -56,7 +56,7 @@ export default function Card({ title, image, desc, tec, link }: {
     }
 
     return (
-        <div className="p-10 rounded-lg justify-center text-center bg-[#050505] shadow-2xl">
+        <div className="p-10 rounded-lg text-center bg-[#050505] shadow-2xl h-[400px] w-[350px] flex flex-col">
             <div className="justify-center flex">
                 {image && (
                     <Image
@@ -68,18 +68,21 @@ export default function Card({ title, image, desc, tec, link }: {
                     />
                 )}
             </div>
-
-            <h1 className="text-xl text-white font-bold py-4">{title}</h1>
-            <p className="text-white pb-2">{desc}</p>
-            <div className="justify-between flex pt-4">
-                <ul className="">
-                    {getTecs()}
-                </ul>
-                {link && (
+            <div>
+                <h1 className="text-xl text-white font-bold py-4">{title}</h1>
+                <p className="text-white text-justify pb-2">{desc}</p>
+            </div>
+            <div className="mt-auto flex w-full">
+                <div className="justify-between flex w-full">
                     <ul>
-                        <li className="p-2 bg-[#000] rounded-lg shadow-2xl"><Link href={link} target="_blank"><SiGithub size={25} color="white" /></Link></li>
+                        {getTecs()}
                     </ul>
-                )}
+                    {link && (
+                        <ul>
+                            <li className="p-2 bg-[#000] rounded-lg shadow-2xl"><Link href={link} target="_blank"><SiGithub size={25} color="white" /></Link></li>
+                        </ul>
+                    )}
+                </div>
             </div>
         </div>
     )
