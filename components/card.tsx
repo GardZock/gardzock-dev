@@ -4,6 +4,14 @@ import { SiMongodb, SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiGithub, 
 
 type Tecnologies = "JAVASCRIPT" | "MONGODB" | "TYPESCRIPT" | "CSHARP" | "REACTNATIVE" | "NEXTJS" | "UNITY"
 
+/** 
+ * @title {string} Title of the Card.
+ * @image {string} Path of the Image.
+ * @desc {string} The Description of the Card.
+ * @tec {Tecnologies} The Tecnologies used.
+*/
+
+
 export default function Card({ title, image, desc, tec, link }: {
     title: string, image?: string, desc: string, tec: Tecnologies | Tecnologies[], link?: string
 }) {

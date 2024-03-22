@@ -2,7 +2,7 @@ import { NextComponentType } from 'next';
 import Image from 'next/image';
 import Link from 'next/link'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 
 const Nav: NextComponentType = () => {
@@ -14,7 +14,7 @@ const Nav: NextComponentType = () => {
     }
 
     return (
-        <nav className='py-2 px-10 flex items-center justify-between w-full shadow-xl bg-[#0e0d0d]'>
+        <nav className="fixed bg-[#1d1d1d] py-1 px-10 flex items-center justify-between w-full shadow-xl">
             {/* LOGO */}
             <Link href="/">
                 <Image
@@ -28,8 +28,8 @@ const Nav: NextComponentType = () => {
             {/* MENU PC */}
             <div className='hidden sm:flex'>
                 <ul className='flex gap-5'>
-                    <Link href="/about"><li className='text-white font-bold text-xl hover:text-gray-600'>ABOUT</li></Link>
-                    <Link href="/projects"><li className='text-white font-bold text-xl hover:text-gray-600'>PROJECTS</li></Link>
+                    <Link href="/contact"><li className='text-white font-bold text-xl hover:text-[#b9b9b9]'>.contact()</li></Link>
+                    <Link href="/projects"><li className='text-white font-bold text-xl hover:text-[#b9b9b9]'>.projects()</li></Link>
                 </ul>
             </div>
 
@@ -53,15 +53,15 @@ const Nav: NextComponentType = () => {
                 <ul className='flex-col'>
                     <Link href="/">
                         <li className='text-white font-bold text-2xl cursor-pointer justify-end py-5 items-center'
-                            onClick={() => setMenuOpen(false)}>HOME</li>
+                            onClick={() => setMenuOpen(false)}>.home()</li>
                     </Link>
-                    <Link href="/about">
+                    <Link href="/contact">
                         <li className='text-white font-bold text-2xl cursor-pointer justify-end py-5 items-center'
-                            onClick={() => setMenuOpen(false)}>ABOUT</li>
+                            onClick={() => setMenuOpen(false)}>.contact()</li>
                     </Link>
                     <Link href="/projects">
                         <li className='text-white font-bold text-2xl cursor-pointer justify-end py-5 items-center'
-                            onClick={() => setMenuOpen(false)}>PROJECTS</li>
+                            onClick={() => setMenuOpen(false)}>.projects()</li>
                     </Link>
                 </ul>
             </div>

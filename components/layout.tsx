@@ -1,3 +1,4 @@
+import Footer from './footer';
 import Navbar from './nav';
 import Head from 'next/head';
 
@@ -15,6 +16,7 @@ export default function Layout({
       </Head>
       <Navbar />
       <>{children}</>
+      <Footer/>
     </>
   )
 }
