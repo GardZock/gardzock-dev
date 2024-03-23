@@ -48,16 +48,16 @@ export default function Home() {
         <div className="w-full my-20">
           <div className="text-white">
             <h1 className="text-center font-bold text-[40px] p-5">My Main Projects</h1>
-            <div className="flex justify-center"  data-aos="fade-up">
+            <div className="flex justify-center" data-aos="fade-up">
               <ul className="flex justify-center">
                 <li className="mx-5">
-                  <Card title="Red Dragon Bot" image="/reddragon.webp" desc="It was my first project, a Discord bot." tec="JAVASCRIPT" />
+                  <Card width="350" height="400" title="Red Dragon Bot" image="/reddragon.webp" desc="It was my first project, a Discord bot." tec="JAVASCRIPT" />
                 </li>
                 <li className="mx-5">
-                <Card title="Flaming Eyes" image="/flamingeyes.webp" desc="It was my first 'public' project, a Discord bot shop." tec={["JAVASCRIPT", "TYPESCRIPT", "MONGODB"]} />
+                  <Card width="350" height="400" title="Flaming Eyes" image="/flamingeyes.webp" desc="It was my first 'public' project, a Discord bot shop." tec={["JAVASCRIPT", "TYPESCRIPT", "MONGODB"]} />
                 </li>
                 <li className="mx-5">
-                <Card title="WarCord" image="/warcord.webp" desc="An NPM Library created to be an alternative option to the WarGaming API." tec="TYPESCRIPT" link="https://github.com/Warcord/WarCord-Lib" />
+                  <Card width="350" height="400" title="WarCord" image="/warcord.webp" desc="An NPM Library created to be an alternative option to the WarGaming API." tec="TYPESCRIPT" link="https://github.com/Warcord/WarCord-Lib" />
                 </li>
               </ul>
             </div>

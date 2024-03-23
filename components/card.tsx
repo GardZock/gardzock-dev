@@ -9,11 +9,16 @@ type Tecnologies = "JAVASCRIPT" | "MONGODB" | "TYPESCRIPT" | "CSHARP" | "REACTNA
  * @image {string} Path of the Image.
  * @desc {string} The Description of the Card.
  * @tec {Tecnologies} The Tecnologies used.
+ * @width {string} The width of card.
+ * @height {string} The height of card.
 */
 
+const parseStyle = (style: { name: string, size: string }) => {
+    return `${style.name}-[${style.size}px]`
+}
 
-export default function Card({ title, image, desc, tec, link }: {
-    title: string, image?: string, desc: string, tec: Tecnologies | Tecnologies[], link?: string
+export default function Card({ title, image, desc, tec, link, width, height }: {
+    title: string, image?: string, desc: string, tec: Tecnologies | Tecnologies[], link?: string, width: string, height: string
 }) {
 
     const getTecs = () => {
@@ -48,7 +53,7 @@ export default function Card({ title, image, desc, tec, link }: {
             <ul className="gap-2 flex">
                 {
                     tecs.map((tec: { name: Tecnologies, value: React.ReactNode }) => (
-                        <li className="p-2 bg-[#000] rounded-lg shadow-2xl" key="">{tec.value}</li>
+                        <li className="p-2 bg-[#000] rounded-lg shadow-2xl" key={tec.name}>{tec.value}</li>
                     ))
                 }
             </ul>
@@ -56,7 +61,7 @@ export default function Card({ title, image, desc, tec, link }: {
     }
 
     return (
-        <div className="p-10 rounded-lg text-center bg-[#050505] shadow-2xl h-[400px] w-[350px] flex flex-col">
+        <div className={`p-10 rounded-lg text-center bg-[#050505] shadow-2xl ${parseStyle({ name: "h", size: height })} ${parseStyle({ name: "w", size: width })} flex flex-col`.trim()}>
             <div className="justify-center flex">
                 {image && (
                     <Image
@@ -70,7 +75,7 @@ export default function Card({ title, image, desc, tec, link }: {
             </div>
             <div>
                 <h1 className="text-xl text-white font-bold py-4">{title}</h1>
-                <p className="text-white text-justify pb-2">{desc}</p>
+                <p className="text-white text-center pb-2">{desc}</p>
             </div>
             <div className="mt-auto flex w-full">
                 <div className="justify-between flex w-full">

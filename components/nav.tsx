@@ -2,7 +2,7 @@ import { NextComponentType } from 'next';
 import Image from 'next/image';
 import Link from 'next/link'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 
 const Nav: NextComponentType = () => {
