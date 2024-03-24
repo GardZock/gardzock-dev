@@ -87,6 +87,7 @@ export default function Contact() {
                 headers: {
                     'Content-Type': 'application/json'
                 },
+                method: 'POST',
                 body: JSON.stringify(fields)
             })
             if (status === 200) {
