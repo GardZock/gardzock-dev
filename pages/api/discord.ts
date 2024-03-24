@@ -1,5 +1,6 @@
 import axios from "axios";
-
+import { get } from '@vercel/edge-config';
+import type { NextApiRequest, NextApiResponse } from 'next'
 interface UserInfo {
     name: string,
     company: string,
@@ -7,7 +8,6 @@ interface UserInfo {
     message: string
 }
 
-import type { NextApiRequest, NextApiResponse } from 'next'
  
 type ResponseData = {
     status: "OK" | "ERROR",
@@ -18,7 +18,7 @@ export default async function DiscordService(
   req: NextApiRequest,
   res: NextApiResponse<ResponseData>
 ) {
-    const bannedips = [""]
+    const bannedips: string[] = await get('bannedips') as string[];
     const forwarded = req.headers["x-forwarded-for"]
     const ip = forwarded ? `${forwarded}`.split(/, /)[0] : req.socket.remoteAddress
     if (bannedips.includes(`${ip}`)) return res.status(401).json({
