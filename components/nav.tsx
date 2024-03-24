@@ -14,7 +14,7 @@ const Nav: NextComponentType = () => {
     }
 
     return (
-        <nav className="fixed bg-[#1d1d1d] py-1 px-10 flex items-center justify-between w-full shadow-xl">
+        <nav className="fixed z-[1] backdrop-blur-md py-1 px-10 flex items-center justify-between w-full shadow-xl">
             {/* LOGO */}
             <Link href="/">
                 <Image
@@ -28,8 +28,8 @@ const Nav: NextComponentType = () => {
             {/* MENU PC */}
             <div className='hidden sm:flex'>
                 <ul className='flex gap-5'>
-                    <Link href="/contact"><li className='text-white font-bold text-xl hover:text-[#b9b9b9]'>.contact()</li></Link>
-                    <Link href="/projects"><li className='text-white font-bold text-xl hover:text-[#b9b9b9]'>.projects()</li></Link>
+                    <Link href="/contact"><li className='text-white text-xl hover:text-[#bebebe]'>.contact()</li></Link>
+                    <Link href="/projects"><li className='text-white text-xl hover:text-[#bebebe]'>.projects()</li></Link>
                 </ul>
             </div>
 

@@ -5,12 +5,17 @@
 
 body {
   margin: 0;
+  padding: 0;
   font-family: "Fira Code", monospace;
   font-optical-sizing: auto;
-  background-color: #1b1b1b;
+  background: linear-gradient(#5a12ea, #3b024c);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.shadow-top {
+  box-shadow: 0 -10px 20px -5px rgba(0, 0, 0, 0.391);
 }
 
 .font {
@@ -23,15 +28,15 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #474747;
+  background: #989898;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #710000;
+  background: #4e0d61;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #330000;
+  background: #330941;
 }

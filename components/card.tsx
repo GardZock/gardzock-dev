@@ -13,13 +13,14 @@ type Tecnologies = "JAVASCRIPT" | "MONGODB" | "TYPESCRIPT" | "CSHARP" | "REACTNA
  * @height {string} The height of card.
 */
 
-const parseStyle = (style: { name: string, size: string }) => {
-    return `${style.name}-[${style.size}px]`
-}
-
 export default function Card({ title, image, desc, tec, link, width, height }: {
     title: string, image?: string, desc: string, tec: Tecnologies | Tecnologies[], link?: string, width: string, height: string
 }) {
+
+    const dynamicStyle = {
+        width: `${width}px`,
+        height: `${height}px`
+    }
 
     const getTecs = () => {
 
@@ -53,7 +54,7 @@ export default function Card({ title, image, desc, tec, link, width, height }: {
             <ul className="gap-2 flex">
                 {
                     tecs.map((tec: { name: Tecnologies, value: React.ReactNode }) => (
-                        <li className="p-2 bg-[#000] rounded-lg shadow-2xl" key={tec.name}>{tec.value}</li>
+                        <li className="p-2 border-2 rounded-lg shadow-2xl" key={tec.name}>{tec.value}</li>
                     ))
                 }
             </ul>
@@ -61,7 +62,7 @@ export default function Card({ title, image, desc, tec, link, width, height }: {
     }
 
     return (
-        <div className={`p-10 rounded-lg text-center bg-[#050505] shadow-2xl ${parseStyle({ name: "h", size: height })} ${parseStyle({ name: "w", size: width })} flex flex-col`.trim()}>
+        <div className="p-10 rounded-lg backdrop-blur-lg text-center border-2 shadow-[#1f1f1f] shadow-2xl flex flex-col" style={dynamicStyle}>
             <div className="justify-center flex">
                 {image && (
                     <Image
@@ -69,7 +70,7 @@ export default function Card({ title, image, desc, tec, link, width, height }: {
                         alt={title}
                         width={100}
                         height={100}
-                        className="rounded-md"
+                        className="rounded-md pointer-events-none"
                     />
                 )}
             </div>
@@ -84,7 +85,7 @@ export default function Card({ title, image, desc, tec, link, width, height }: {
                     </ul>
                     {link && (
                         <ul>
-                            <li className="p-2 bg-[#000] rounded-lg shadow-2xl"><Link href={link} target="_blank"><SiGithub size={25} color="white" /></Link></li>
+                            <li className="p-2 border-2 rounded-lg shadow-2xl"><Link href={link} target="_blank"><SiGithub size={25} color="white" /></Link></li>
                         </ul>
                     )}
                 </div>

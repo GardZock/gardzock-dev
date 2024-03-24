@@ -32,7 +32,7 @@ export default function Contact() {
                     <Mes text={retmes.mes} type={retmes.type} />
                 )}
                 <div className="w-full flex justify-center">
-                    <div className="p-10 mt-10 border-2 rounded-md bg-[#101010]">
+                    <div className="p-10 mt-10 border-2 backdrop-blur-lg rounded-md shadow-md shadow-[#1f1f1f]">
                         <div className="pb-10 text-center font-bold">
                             <h1 className="text-white text-6xl">Contact Me</h1>
                         </div>
@@ -41,19 +41,19 @@ export default function Contact() {
                             <form className="w-full" onSubmit={(e) => { e.preventDefault(); PostToDiscord(); }}>
                                 <label className="mb-5">
                                     <p className="text-white font-bold">Your Name:</p>
-                                    <input className="w-full p-2 rounded-md shadow-md shadow-black" type="text" value={name} onChange={(e) => setName(`${e.target.value}`)} name="name" />
+                                    <input className="w-full p-2 rounded-md shadow-md shadow-[#1f1f1f]" type="text" value={name} onChange={(e) => setName(`${e.target.value}`)} name="name" />
                                 </label>
                                 <label>
                                     <p className="text-white font-bold mt-5">Company Name (optional):</p>
-                                    <input className="w-full p-2 rounded-md shadow-md shadow-black" type="text" value={company} onChange={(e) => setCompany(`${e.target.value}`)} name="company_name" />
+                                    <input className="w-full p-2 rounded-md shadow-md shadow-[#1f1f1f]" type="text" value={company} onChange={(e) => setCompany(`${e.target.value}`)} name="company_name" />
                                 </label>
                                 <label>
                                     <p className="text-white font-bold mt-5">Email:</p>
-                                    <input className="w-full p-2 rounded-md shadow-md shadow-black" type="email" value={email} onChange={(e) => setEmail(`${e.target.value}`)} name="email" />
+                                    <input className="w-full p-2 rounded-md shadow-md shadow-[#1f1f1f]" type="email" value={email} onChange={(e) => setEmail(`${e.target.value}`)} name="email" />
                                 </label>
                                 <label>
                                     <p className="text-white font-bold mt-5">Messsage Content:</p>
-                                    <textarea className="w-full h-40 p-2 rounded-md shadow-md shadow-black" name="message" value={message} onChange={(e) => setMessage(`${e.target.value}`)}></textarea>
+                                    <textarea className="w-full h-40 p-2 rounded-md shadow-md shadow-[#1f1f1f]" name="message" value={message} onChange={(e) => setMessage(`${e.target.value}`)}></textarea>
                                 </label>
 
                                 <button className="text-center rounded-md p-2 w-full font-bold text-white mt-5 bg-blue-700 hover:bg-blue-800" type="submit" value="Send">Send</button>

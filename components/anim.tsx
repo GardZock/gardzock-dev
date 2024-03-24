@@ -47,9 +47,6 @@ export default function Anim() {
 
     const options: ISourceOptions = useMemo(
         () => ({
-            background: {
-                color: "#000000"
-            },
             fpsLimit: 120,
             particles: {
                 color: {
