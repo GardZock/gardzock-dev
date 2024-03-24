@@ -20,11 +20,11 @@ export default async function DiscordService(
   res: NextApiResponse<ResponseData>
 ) {
     const bannedips = [""]
-    const ip = requestIp.getClientIp(req)
-    if (bannedips.includes(`${ip}`)) return res.status(401).json({
-        status: "ERROR",
-        content: "You're banned from the IP."
-    });
+    // const ip = requestIp.getClientIp(req)
+    // if (bannedips.includes(`${ip}`)) return res.status(401).json({
+    //     status: "ERROR",
+    //     content: "You're banned from the IP."
+    // });
     console.log(req.method)
     if (req.method === "POST") {
         const data = req.body
@@ -42,7 +42,7 @@ export default async function DiscordService(
                 title: data.name,
                 color: 16711680,
                 description: data.message,
-                footer: { text: `${data.company} | ${data.email} | ${ip}` }
+                footer: { text: `${data.company} | ${data.email}` }// | ${ip}
               },
             ],
         };
