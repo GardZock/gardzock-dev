@@ -27,10 +27,12 @@ export default async function DiscordService(
     });
     if (req.method === "POST") {
         const data = req.body
+        console.log(data)
         if (!data || !data.name || !data.message || !data.email) return res.status(400).json({
             status: "ERROR",
             content: "The fields are empty."
         })
+        console.log('Parou na 35')
         
         const body = {
             tts: false,
@@ -43,11 +45,13 @@ export default async function DiscordService(
               },
             ],
         };
+        console.log('Parou na 47')
         try {
             const info = await axios.post(
                 `${process.env.WEBHOOK}`,
                 body
             );
+            console.log('Parou na 53')
             return res.status(200).json({
                 status: "OK",
                 content: `Your message has sent successfully.`
@@ -67,6 +71,7 @@ export default async function DiscordService(
             content: "Wrong."
         })
     }
+    console.log('Parou na 71')
 }
 
 export type { UserInfo }
