@@ -1,10 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: rgb(27, 27, 27);
+  padding: 0;
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  background: linear-gradient(#5a12ea, #3b024c);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-rp {
+
+  background: linear-gradient(#5a12ea, #3b024c);
+}
+
+.shadow-top {
+  box-shadow: 0 -10px 20px -5px rgba(0, 0, 0, 0.391);
+}
+
+.font {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #989898;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4e0d61;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #330941;
 }

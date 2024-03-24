@@ -14,7 +14,7 @@ const Nav: NextComponentType = () => {
     }
 
     return (
-        <nav className='py-2 px-10 flex items-center justify-between w-full shadow-xl bg-[#0e0d0d]'>
+        <nav className="fixed z-[1] backdrop-blur-md py-1 px-10 flex items-center justify-between w-full shadow-xl">
             {/* LOGO */}
             <Link href="/">
                 <Image
@@ -28,8 +28,8 @@ const Nav: NextComponentType = () => {
             {/* MENU PC */}
             <div className='hidden sm:flex'>
                 <ul className='flex gap-5'>
-                    <Link href="/about"><li className='text-white font-bold text-xl hover:text-gray-600'>ABOUT</li></Link>
-                    <Link href="/projects"><li className='text-white font-bold text-xl hover:text-gray-600'>PROJECTS</li></Link>
+                    <Link href="/contact"><li className='text-white text-xl hover:text-[#bebebe]'>.contact()</li></Link>
+                    <Link href="/projects"><li className='text-white text-xl hover:text-[#bebebe]'>.projects()</li></Link>
                 </ul>
             </div>
 
@@ -41,8 +41,8 @@ const Nav: NextComponentType = () => {
             {/* MENU MOBILE */}
             <div className={
                 menuOpen ?
-                    "fixed left-0 top-0 w-[65%] sm:hidden h-screen bg-[#000000] p-10 ease-in duration-500" :
-                    "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+                    "fixed left-0 top-0 w-[65%] sm:hidden bg-rp h-screen p-10 ease-in duration-500" :
+                    "fixed left-[-100%] h-screen bg-rp top-0 p-10 ease-in duration-500"
             }>
                 <div className='flex w-full items-center justify-end'>
                     <div onClick={handleNav} className='cursor-pointer'>
@@ -53,15 +53,15 @@ const Nav: NextComponentType = () => {
                 <ul className='flex-col'>
                     <Link href="/">
                         <li className='text-white font-bold text-2xl cursor-pointer justify-end py-5 items-center'
-                            onClick={() => setMenuOpen(false)}>HOME</li>
+                            onClick={() => setMenuOpen(false)}>.home()</li>
                     </Link>
-                    <Link href="/about">
+                    <Link href="/contact">
                         <li className='text-white font-bold text-2xl cursor-pointer justify-end py-5 items-center'
-                            onClick={() => setMenuOpen(false)}>ABOUT</li>
+                            onClick={() => setMenuOpen(false)}>.contact()</li>
                     </Link>
                     <Link href="/projects">
                         <li className='text-white font-bold text-2xl cursor-pointer justify-end py-5 items-center'
-                            onClick={() => setMenuOpen(false)}>PROJECTS</li>
+                            onClick={() => setMenuOpen(false)}>.projects()</li>
                     </Link>
                 </ul>
             </div>

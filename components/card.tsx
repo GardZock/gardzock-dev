@@ -4,9 +4,23 @@ import { SiMongodb, SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiGithub, 
 
 type Tecnologies = "JAVASCRIPT" | "MONGODB" | "TYPESCRIPT" | "CSHARP" | "REACTNATIVE" | "NEXTJS" | "UNITY"
 
-export default function Card({ title, image, desc, tec, link }: {
-    title: string, image?: string, desc: string, tec: Tecnologies | Tecnologies[], link?: string
+/** 
+ * @title {string} Title of the Card.
+ * @image {string} Path of the Image.
+ * @desc {string} The Description of the Card.
+ * @tec {Tecnologies} The Tecnologies used.
+ * @width {string} The width of card.
+ * @height {string} The height of card.
+*/
+
+export default function Card({ title, image, desc, tec, link, width, height }: {
+    title: string, image?: string, desc: string, tec: Tecnologies | Tecnologies[], link?: string, width: string, height: string
 }) {
+
+    const dynamicStyle = {
+        width: `${width}px`,
+        height: `${height}px`
+    }
 
     const getTecs = () => {
 
@@ -40,7 +54,7 @@ export default function Card({ title, image, desc, tec, link }: {
             <ul className="gap-2 flex">
                 {
                     tecs.map((tec: { name: Tecnologies, value: React.ReactNode }) => (
-                        <li className="p-2 bg-[#000] rounded-lg shadow-2xl" key="">{tec.value}</li>
+                        <li className="p-2 border-2 rounded-lg shadow-2xl" key={tec.name}>{tec.value}</li>
                     ))
                 }
             </ul>
@@ -48,7 +62,7 @@ export default function Card({ title, image, desc, tec, link }: {
     }
 
     return (
-        <div className="p-10 rounded-lg justify-center text-center bg-[#050505] shadow-2xl">
+        <div className="p-10 rounded-lg backdrop-blur-lg text-center border-2 shadow-[#1f1f1f] shadow-2xl flex flex-col" style={dynamicStyle}>
             <div className="justify-center flex">
                 {image && (
                     <Image
@@ -56,22 +70,25 @@ export default function Card({ title, image, desc, tec, link }: {
                         alt={title}
                         width={100}
                         height={100}
-                        className="rounded-md"
+                        className="rounded-md pointer-events-none"
                     />
                 )}
             </div>
-
-            <h1 className="text-xl text-white font-bold py-4">{title}</h1>
-            <p className="text-white pb-2">{desc}</p>
-            <div className="justify-between flex pt-4">
-                <ul className="">
-                    {getTecs()}
-                </ul>
-                {link && (
+            <div>
+                <h1 className="text-xl text-white font-bold py-4">{title}</h1>
+                <p className="text-white text-center pb-2">{desc}</p>
+            </div>
+            <div className="mt-auto flex w-full">
+                <div className="justify-between flex w-full">
                     <ul>
-                        <li className="p-2 bg-[#000] rounded-lg shadow-2xl"><Link href={link} target="_blank"><SiGithub size={25} color="white" /></Link></li>
+                        {getTecs()}
                     </ul>
-                )}
+                    {link && (
+                        <ul>
+                            <li className="p-2 border-2 rounded-lg shadow-2xl"><Link href={link} target="_blank"><SiGithub size={25} color="white" /></Link></li>
+                        </ul>
+                    )}
+                </div>
             </div>
         </div>
     )
