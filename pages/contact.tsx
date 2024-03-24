@@ -1,4 +1,3 @@
-import axios from "axios";
 import { useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
@@ -84,9 +83,13 @@ export default function Contact() {
         console.log('aaa')
         setButerror(false)
         if (handleValidation()) {
-            const { data } = await axios.post('/api/discord', fields)
-            console.log(data)
-            if (data.status === "ERROR") {
+            const { status } = await fetch('/api/discord', { 
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(fields)
+            })
+            if (status === 200) {
                 setSended('1');
                 setDisabled(true);
                 setButerror(true);
