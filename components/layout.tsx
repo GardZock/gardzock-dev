@@ -11,6 +11,7 @@ export default function Layout({
   return (
     <>
       <Head>
+        <meta charSet="UTF-8"/>
         <title> | GardZock Developer</title>
         <link rel="shortcut icon" href="/favicon.svg" />
         <meta name="description" content="Portfolio of Miguel Otavio."/>
