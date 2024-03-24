@@ -2,6 +2,7 @@ import Footer from '@/components/footer';
 import Navbar from '@/components/nav';
 import Head from 'next/head';
 import Anim from '@/components/anim';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Layout({
     children,
@@ -18,6 +19,7 @@ export default function Layout({
       </Head>
       <Navbar />
       <Anim />
+      <SpeedInsights/>
       <>{children}</>
       <Footer/>
     </>
