@@ -4,7 +4,7 @@ import {
     type Container,
     type ISourceOptions,
 } from "@tsparticles/engine";
-import { loadAll } from "@tsparticles/all";
+import { loadSlim } from "@tsparticles/slim";
 
 export declare const enum MoveDirection {
     bottom = "bottom",
@@ -35,7 +35,7 @@ export default function Anim() {
 
     useEffect(() => {
         initParticlesEngine(async (engine) => {
-            await loadAll(engine);
+            await loadSlim(engine);
         }).then(() => {
             setInit(true);
         });
