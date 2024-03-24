@@ -83,6 +83,7 @@ export default function Contact() {
         console.log('aaa')
         setButerror(false)
         if (handleValidation()) {
+            console.log('bbb')
             const { status } = await fetch('/api/discord', { 
                 headers: {
                     'Content-Type': 'application/json'
@@ -90,6 +91,7 @@ export default function Contact() {
                 method: 'POST',
                 body: JSON.stringify(fields)
             })
+            console.log(status)
             if (status === 200) {
                 setSended('1');
                 setDisabled(true);
