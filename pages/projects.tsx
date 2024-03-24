@@ -17,7 +17,7 @@ export default function Projects() {
           <li className="my-5"><Card width="350" height="400" title="Car Drift Game" image="/unity.webp" desc="Created in Unity and never given a name, it was a project to make an Initial D-style drift car game." tec={["CSHARP", "UNITY"]} link="https://github.com/Warcord/WarCord-Lib" /></li>
           <li className="my-5"><Card width="350" height="400" title="Video Player" image="/react.webp" desc="An Expo project, an attempt to make a video player like youtube." tec={["REACTNATIVE", "TYPESCRIPT"]} /></li>
           <li className="my-5"><Card width="350" height="400" title="Bot DashBoard" image="/nextjs.webp" desc="A DashBoard for Discord bots." tec={["NEXTJS", "TYPESCRIPT", "MONGODB"]} /></li>
-          <li className="my-5"><Card width="350" height="400" title="Discloud Visual Studio Code Extesion" image="/vscode.webp" desc="I contributed for Discloud Visual Studio Code extention creation, it was made for easy help the bot developer." tec={["TYPESCRIPT"]} link="https://github.com/discloud/vscode-discloud" /></li>
+          <li className="my-5"><Card width="350" height="430" title="Discloud VS Code Extesion" image="/vscode.webp" desc="I contributed for Discloud VS Code extention creation, it was made for easy help the bot developer." tec={["TYPESCRIPT"]} link="https://github.com/discloud/vscode-discloud" /></li>
         </ul>
       </div>
 
@@ -29,7 +29,7 @@ export default function Projects() {
           <li className="m-5"><Card width="1300" height="400" title="Car Drift Game" image="/unity.webp" desc="Created in Unity and never given a name, it was a project to make an Initial D-style drift car game." tec={["CSHARP", "UNITY"]} link="https://github.com/Warcord/WarCord-Lib" /></li>
           <li className="m-5"><Card width="1300" height="400" title="Video Player" image="/react.webp" desc="An Expo project, an attempt to make a video player like youtube." tec={["REACTNATIVE", "TYPESCRIPT"]} /></li>
           <li className="m-5"><Card width="1300" height="400" title="Bot DashBoard" image="/nextjs.webp" desc="A DashBoard for Discord bots." tec={["NEXTJS", "TYPESCRIPT", "MONGODB"]} /></li>
-          <li className="m-5"><Card width="1300" height="400" title="Discloud Visual Studio Code Extesion" image="/vscode.webp" desc="I contributed for Discloud Visual Studio Code extention creation, it was made for easy help the bot developer." tec={["TYPESCRIPT"]} link="https://github.com/discloud/vscode-discloud" /></li>
+          <li className="m-5"><Card width="1300" height="400" title="Discloud VS Code Extesion" image="/vscode.webp" desc="I contributed for Discloud VS Code extention creation, it was made for easy help the bot developer." tec={["TYPESCRIPT"]} link="https://github.com/discloud/vscode-discloud" /></li>
         </ul>
       </div>
     </main>
