@@ -92,7 +92,8 @@ export default function Contact() {
                 body: JSON.stringify(fields)
             })
             console.log(status)
-            if (status === 200) {
+            if (status !== 200) {
+                console.log('ccc')
                 setSended('1');
                 setDisabled(true);
                 setButerror(true);

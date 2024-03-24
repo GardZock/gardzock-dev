@@ -1,5 +1,4 @@
 import axios from "axios";
-import requestIp from 'request-ip';
 
 interface UserInfo {
     name: string,
@@ -20,20 +19,18 @@ export default async function DiscordService(
   res: NextApiResponse<ResponseData>
 ) {
     const bannedips = [""]
-    // const ip = requestIp.getClientIp(req)
-    // if (bannedips.includes(`${ip}`)) return res.status(401).json({
-    //     status: "ERROR",
-    //     content: "You're banned from the IP."
-    // });
-    console.log(req.method)
+    const forwarded = req.headers["x-forwarded-for"]
+    const ip = forwarded ? `${forwarded}`.split(/, /)[0] : req.socket.remoteAddress
+    if (bannedips.includes(`${ip}`)) return res.status(401).json({
+        status: "ERROR",
+        content: "You're banned from the IP."
+    });
     if (req.method === "POST") {
         const data = req.body
-        console.log(data)
         if (!data || !data.name || !data.message || !data.email) return res.status(400).json({
             status: "ERROR",
             content: "The fields are empty."
         })
-        console.log('Parou na 35')
         
         const body = {
             tts: false,
@@ -42,17 +39,15 @@ export default async function DiscordService(
                 title: data.name,
                 color: 16711680,
                 description: data.message,
-                footer: { text: `${data.company} | ${data.email}` }// | ${ip}
+                footer: { text: `${data.company ? data.company : 'None'} | ${data.email} | ${ip}` }//
               },
             ],
         };
-        console.log('Parou na 47')
         try {
             const info = await axios.post(
-                `https://github.com`,
+                `${process.env.WEBHOOK}`,
                 body
             );
-            console.log('Parou na 53')
             return res.status(200).json({
                 status: "OK",
                 content: `Your message has sent successfully.`
@@ -61,7 +56,7 @@ export default async function DiscordService(
         }
         catch(error) {
             console.log(error);
-            return res.status(200).json({
+            return res.status(400).json({
                 status: "ERROR",
                 content: `${error}`
             });
@@ -72,7 +67,6 @@ export default async function DiscordService(
             content: "Wrong."
         })
     }
-    console.log('Parou na 71')
 }
 
 export type { UserInfo }
