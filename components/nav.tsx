@@ -41,8 +41,8 @@ const Nav: NextComponentType = () => {
             {/* MENU MOBILE */}
             <div className={
                 menuOpen ?
-                    "fixed left-0 top-0 w-[65%] sm:hidden h-screen bg-[#000000] p-10 ease-in duration-500" :
-                    "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+                    "fixed left-0 top-0 w-[65%] sm:hidden bg-rp h-screen p-10 ease-in duration-500" :
+                    "fixed left-[-100%] h-screen bg-rp top-0 p-10 ease-in duration-500"
             }>
                 <div className='flex w-full items-center justify-end'>
                     <div onClick={handleNav} className='cursor-pointer'>

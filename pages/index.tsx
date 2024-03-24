@@ -6,8 +6,8 @@ import Card from "@/components/card";
 export default function Home() {
   return (
     <>
-      <main className="my-32">
-        <div className="m-auto justify-center items-center h-[700px]">
+      <main className="w-full my-32 flex flex-col">
+        <div className="md:m-auto justify-center items-center h-[700px]">
           <div className="justify-center items-center pointer-events-none flex py-10">
             <Image
               src="/developer.webp"
@@ -28,7 +28,7 @@ export default function Home() {
         <div className="w-full">
           <div className="text-white">
             <h2 className="text-center text-[40px] font-bold">About Me</h2>
-            <div className="border-2 backdrop-blur-lg mx-auto w-[1000px] text-justify p-10 rounded-md mt-5" data-aos="fade-up">
+            <div className="border-2 backdrop-blur-lg md:mx-auto mx-[30px] p-4 md:w-[1000px] text-justify md:p-10 rounded-md mt-5" data-aos="fade-up">
               <p className="py-2">
                 Hello, my name is Miguel, or GardZock, as you prefer to call me. I&apos;m a developer who started learning at the age of 12, with the dream of becoming a great developer.
                 I&apos;ve recently learned a lot about this area and it soon became my passion to create and disassemble code in order to learn and evolve as a professional.
@@ -43,18 +43,18 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-full my-20">
+        <div className="w-full md:my-20">
           <div className="text-white">
             <h1 className="text-center font-bold text-[40px] p-5">My Main Projects</h1>
             <div className="flex justify-center" data-aos="fade-up">
-              <ul className="flex justify-center">
-                <li className="mx-5">
+              <ul className="sm:block md:flex justify-center">
+                <li className="my-5 md:mx-5 md:my-0">
                   <Card width="350" height="400" title="Red Dragon Bot" image="/reddragon.webp" desc="It was my first project, a Discord bot." tec="JAVASCRIPT" />
                 </li>
-                <li className="mx-5">
+                <li className="my-5 md:mx-5 md:my-0">
                   <Card width="350" height="400" title="Flaming Eyes" image="/flamingeyes.webp" desc="It was my first 'public' project, a Discord bot shop." tec={["JAVASCRIPT", "TYPESCRIPT", "MONGODB"]} />
                 </li>
-                <li className="mx-5">
+                <li className="my-5 md:mx-5 md:my-0">
                   <Card width="350" height="400" title="WarCord" image="/warcord.webp" desc="An NPM Library created to be an alternative option to the WarGaming API." tec="TYPESCRIPT" link="https://github.com/Warcord/WarCord-Lib" />
                 </li>
               </ul>

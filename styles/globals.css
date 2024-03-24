@@ -14,6 +14,11 @@ body {
   flex-direction: column;
 }
 
+.bg-rp {
+
+  background: linear-gradient(#5a12ea, #3b024c);
+}
+
 .shadow-top {
   box-shadow: 0 -10px 20px -5px rgba(0, 0, 0, 0.391);
 }

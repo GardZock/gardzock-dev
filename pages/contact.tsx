@@ -32,12 +32,12 @@ export default function Contact() {
                     <Mes text={retmes.mes} type={retmes.type} />
                 )}
                 <div className="w-full flex justify-center">
-                    <div className="p-10 mt-10 border-2 backdrop-blur-lg rounded-md shadow-md shadow-[#1f1f1f]">
+                    <div className="p-10 mt-10 border-2 backdrop-blur-lg rounded-md shadow-md shadow-[#1f1f1f] m-2">
                         <div className="pb-10 text-center font-bold">
                             <h1 className="text-white text-6xl">Contact Me</h1>
                         </div>
 
-                        <div className="flex w-96">
+                        <div className="flex md:w-96">
                             <form className="w-full" onSubmit={(e) => { e.preventDefault(); PostToDiscord(); }}>
                                 <label className="mb-5">
                                     <p className="text-white font-bold">Your Name:</p>
