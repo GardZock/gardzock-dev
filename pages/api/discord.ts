@@ -25,6 +25,7 @@ export default async function DiscordService(
         status: "ERROR",
         content: "You're banned from the IP."
     });
+    console.log(req.method)
     if (req.method === "POST") {
         const data = req.body
         console.log(data)
@@ -48,7 +49,7 @@ export default async function DiscordService(
         console.log('Parou na 47')
         try {
             const info = await axios.post(
-                `${process.env.WEBHOOK}`,
+                `https://github.com`,
                 body
             );
             console.log('Parou na 53')
