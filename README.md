@@ -1,11 +1,5 @@
 # GardZock Portfolio | Miguel Turco
 
-```
-// SYSTEM.PORTFOLIO_V2 --STATUS: ONLINE
-// ARCHITECTURE: NEXT.JS 16 (TURBOPACK) + REACT THREE FIBER + GSAP
-// DEVELOPER: MIGUEL TURCO (@GARDZOCK)
-```
-
 [![Next.js](https://img.shields.io/badge/Next.js_16-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
 [![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org/)
