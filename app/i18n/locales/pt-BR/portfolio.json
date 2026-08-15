@@ -1,0 +1,158 @@
+{
+    "NAV": {
+        "TAB_NAME": "Meu Portfólio"
+    },
+    "HEADER": {
+        "SESSION_TOKEN": "Session_Token: Active_Dev",
+        "TITLE_BUILDING": "Construindo",
+        "TITLE_WEB_SYSTEMS": "sistemas web",
+        "TITLE_AND": "jogos e",
+        "TITLE_MODELS_3D": "modelos 3D.",
+        "BIO_PART1": "Sou",
+        "BIO_NAME": "Miguel Turco",
+        "BIO_PART2": ", atuando no mundo digital como",
+        "BIO_TAG": "@GardZock",
+        "BIO_PART3": ". Um desenvolvedor Full-Stack conectando engenharia, desenvolvimento de jogos e arte imersiva.",
+        "TYPEWRITER": {
+            "INITIALIZING": "> Inicializando módulos full-stack...",
+            "LOADING_ASSETS": "> Carregando assets 3D & ambientes...",
+            "COMPILING_LOGIC": "> Compilando lógica do jogo..."
+        },
+        "SCROLL_DOWN": "Scroll Down"
+    },
+    "STORYLINE": {
+        "TITLE": "Minha Trajetória",
+        "SUBTITLE": "Explore minha jornada de 2020 a 2026 e descubra como evoluí em minha carreira.",
+        "2020": {
+            "TITLE": "Primeiro Contato com Código",
+            "DESCRIPTION": "Por volta de outubro, durante a pandemia, estava com 12 anos e só havia um pensanmento 'O que devo ser quando crescer?', então escolhi programação, mas voltada a um meio que me afetasse, no caso, foi criar um Bot na plataforma que eu mais usava na época, o Discord."
+        },
+        "2021": {
+            "TITLE": "Primeiros Deploys & Lançamentos",
+            "DESCRIPTION": "Eu havia evoluido consideravelmente, tanto em mente quanto em conhecimento, então acabei lançando meus primeiros projetos completos, procurando fazer a diferença, criei o Red Dragon, um Bot que tinha como sua principal função, gerenciar todo o servidor, previnindo ataques e entre outras funcionalidades, lançei outros Bots como um de música, mas nenhum desses projetos foram além.\n\nAgradecimentos especiais a plataforma Discloud, sua comunidade e ao seu criador, por me proporcionarem um ambiente onde eu me desenvolvi profissionalmente."
+        },
+        "2022": {
+            "TITLE": "Desenvolvimento Web & Projetos de Terceiros",
+            "DESCRIPTION": "Logo no ínicio do ano, percebi que a área dos Bots não era tão promissora, e tive o desejo de expandir meus horizontes, logo antes da popularização das IAs, comecei a estudar desenvolvimento Web com Next.JS, finalizei meu primeiro Dashboard voltado a Bots, nesse ano também lancei outras ideias, sendo elas o meu maior projeto até o momento: WarCord, uma biblioteca NPM que buscava integrar uma API da desenvolvedora WarGaming; Nesse mesmo ano participei da criação de outros projetos para terceiros, sendo os principais: Extensão de VS Code para Discloud e Bot de Loja com integração de Pix (Novidade na época)."
+        },
+        "2023": {
+            "TITLE": "Networking Profissional",
+            "DESCRIPTION": "Estava estagnado profissionalmente, me encontrei dependente de uma única rede de contatos que não estava me suprindo financeiramente, para rendendo ou mesmo com um emprego profissional, procurei um local aonde poderia me encontrar com mais desenvolvedores, foi nessa época que comecei a estudar o comportamento de plataformas como Linkedin e outras plataformas de recrutamento. Nesse mesmo ano, entrei no colégio técnico em busca de criar uma rede de contatos locais."
+        },
+        "2024": {
+            "TITLE": "Consolidação e Visão de Produto",
+            "DESCRIPTION": "Busquei entender dores reais e locais da minha cidade, além de tentar expandir meu conhecimento com as tecnologias mais novas do mercado, procurei criar ideias que realmente resolvessem problemas do dia a dia. Ao invés de focar em volume de entregas, transformei esse ano em um período de consolidação técnica e pesquisa. Mantive e refinei o que já estava dando certo, aprofundei minha visão de produto e estruturei a base estratégica e de contatos necessária para dar meus próximos passos de forma mais direcionada, escalável e menos impulsiva."
+        },
+        "2025": {
+            "TITLE": "Game Dev & Protótipos",
+            "DESCRIPTION": "Resgatando minha paixão criativa de infância, decidi direcionar meus estudos para o desenvolvimento de jogos digitais. Enfrentando limitações severas de hardware que me impediam de usar engines convencionais, precisei ser adaptável e escolhi o Roblox Studio como plataforma de criação. O ano foi um verdadeiro laboratório de testes: desenvolvi diversos protótipos, enfrentei curvas de aprendizado complexas e iterei sobre várias mecânicas. O resultado desse processo de filtragem foi a concepção de um projeto inovador, que superou a fase de testes e atualmente se encontra em refinamento final, prestes a ser lançado."
+        },
+        "2026": {
+            "TITLE": "Presente & Futuro",
+            "DESCRIPTION": "Este ano marca um ponto de virada estratégico. Iniciei minha graduação em Análise e Desenvolvimento de Sistemas e me mudei de cidade para expandir meu networking e buscar ativamente novos desafios no mercado de trabalho. Paralelamente à formalização acadêmica, mergulhei no estudo de modelos de negócios. O foco principal agora é unir código e empreendedorismo: estou arquitetando e validando ativamente novas ideias de plataformas SaaS, com o desenvolvimento a todo vapor para lançamentos sólidos previstos ainda para este ano."
+        }
+    },
+    "GRAPH": {
+        "SUB_FULLSTACK": "dev full-stack",
+        "SUB_WEB_FRAMEWORK": "framework web",
+        "SUB_LANGUAGE": "linguagem",
+        "SUB_3D_GRAPHICS": "gráficos 3D",
+        "SUB_GAME_DEV": "dev de jogos",
+        "SUB_3D_ART": "arte 3D",
+        "SUB_RUNTIME": "execução",
+        "SUB_DATABASE": "banco de dados"
+    },
+    "MINI_DISCLOUD": {
+        "PLANS": "Planos",
+        "SERVICES": "Serviços",
+        "TOOLS": "Ferramentas",
+        "DOCS": "Documentação",
+        "TYPEWRITER": {
+            "SITE": "Seu site",
+            "DB": "Seu DB",
+            "BOT": "Seu Bot",
+            "API": "Sua API"
+        },
+        "ONLINE_NOW": "Online Agora!",
+        "SUBTITLE": "Transformando a forma como você hospeda suas aplicações",
+        "USERS_COUNT": "mais de 200 mil usuários",
+        "START_FREE": "Comece gratuitamente"
+    },
+    "MINI_VSCODE": {
+        "FILE": "Arquivo",
+        "EDIT": "Editar",
+        "TERMINAL": "Terminal",
+        "EXPLORER": "EXPLORADOR",
+        "FIRST_LINES": "Primeiras linhas de código"
+    },
+    "MINI_LIVE_SERVER": {
+        "PORT": "Porta: 5500",
+        "RENDERED_VIA": "Renderizado via servidor local live reload."
+    },
+    "MINI_LINKEDIN": {
+        "SEARCH": "Pesquisar...",
+        "HOME": "Início",
+        "MY_NETWORK": "Minha Rede",
+        "JOBS": "Vagas",
+        "MESSAGES": "Mensagens",
+        "HEADLINE": "Full-stack Developer | Next.js, TypeScript & Node.js | Técnico em Análise e Desenvolvimento de Sistemas",
+        "LOCATION": "Paraná, Brasil",
+        "CONTACT_INFO": "Dados de contato",
+        "CONNECTIONS": "1.628 conexões",
+        "OPEN_TO": "Disponível para",
+        "MESSAGE": "Mensagem",
+        "UNIVERSITY": "Universidade Tecnológica Federal do Paraná"
+    },
+    "MINI_GAME_DEV": {
+        "SYNC_SCRIPTS": "sincronizando scripts... construindo mundo...",
+        "CANCEL": "Cancelar"
+    },
+    "MINI_SAAS": {
+        "ACTIVE_PROJECT": "projeto_ativo: cluster_principal",
+        "CLIENTS": "Clientes",
+        "ACTIVE_COUNT": "32 ATIVOS",
+        "HEALTH": "Saúde",
+        "DEPLOY_PIPELINE": "pipeline_deploy: ativo",
+        "DEPLOY": "DEPLOY",
+        "STATUS": "STATUS",
+        "LOAD": "CARGA",
+        "ACTIVE": "● ATIVO"
+    },
+    "MINI_GITHUB": {
+        "VIEW_OVERVIEW": "Visualização Geral",
+        "VIEW_PRIORITY": "Por prioridade",
+        "NEW": "+ Novo",
+        "FILTER_PLACEHOLDER": "Filtrar por palavra-chave",
+        "COL_PREP": "Em Preparação",
+        "COL_IN_PROGRESS": "Em Andamento",
+        "COL_DONE": "Concluído",
+        "EMPTY_PREP": "Esse item ainda não foi atribuído.",
+        "EMPTY_IN_PROGRESS": "Esta task está pronta para ser atribuída.",
+        "EMPTY_DONE": "Este item foi concluído.",
+        "TASK_1": "Setup: Estrutura do Projeto",
+        "TASK_2": "Design: Tela de Login",
+        "TASK_3": "Docs: Inicial Estrutura",
+        "ADD_ITEM": "+ Adicionar item...",
+        "SELECTED": "selecionado",
+        "SELECT_DETAILS": "Selecione um item para ver detalhes",
+        "ITEMS_COUNT": "itens"
+    },
+    "EOF_HINT": {
+        "LABEL": "// EOF — continue rolando",
+        "LINE1": "Você chegou ao fim da interface.",
+        "LINE2": "Mas isso ainda está",
+        "LINE3": "rodando dentro de algo maior.",
+        "LINE4": "Continue rolando."
+    },
+    "CONTACT": {
+        "TITLE": "Conecte-se Comigo",
+        "SUBTITLE": "Vamos construir algo incrível juntos. Entre em contato através das minhas redes ou envie um e-mail direto.",
+        "LINKEDIN_DESC": "Rede Profissional & Conexões",
+        "GITHUB_DESC": "Repositórios & Projetos Open Source",
+        "INSTAGRAM_DESC": "Bastidores, Projetos & Conteúdo",
+        "EMAIL_DESC": "Contato Direto & Propostas",
+        "COPIED": "Copiado!",
+        "CLICK_TO_COPY": "Clique para copiar o e-mail"
+    },
+    "ADBLOCK_NOTICE": "Desative o AdBlock para ouvir!"
+}

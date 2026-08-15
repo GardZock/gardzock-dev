@@ -1,0 +1,127 @@
+{
+  "NAV": {
+    "HISTORIA": "história",
+    "MANTRAS": "mantras",
+    "APRENDIZADOS": "aprendizados",
+    "VIRADAS": "viradas",
+    "HOJE": "hoje",
+    "RECADO": "recado"
+  },
+  "PAGINATION": {
+    "PAGE": "Página",
+    "OF": "de",
+    "PREV": "Anterior",
+    "NEXT": "Próximo"
+  },
+  "SECTIONS": {
+    "HISTORIA": {
+      "TITLE": "História",
+      "PAGES": [
+        {
+          "SUBTITLE": "O começo (2020–2021)",
+          "TYPE": "TEXT",
+          "CONTENT": "Durante a pandemia de 2020, eu tentava criar servidores de Minecraft, mas travava na sopa de letrinhas dos arquivos. Acabei migrando pro Discord e percebi que servidores com bots próprios se destacavam mais. Sem nem saber que precisava programar, copiei um tutorial do YouTube e fiz meu primeiro bot. Em 2021, depois de algumas tentativas frustradas, consegui hospedar meu bot online pela primeira vez. Foi quando pedi ajuda numa comunidade e tomei um banho de água fria: percebi que não sabia nada. Em vez de desistir, larguei o copia-e-cola e comecei a criar as coisas do zero."
+        },
+        {
+          "SUBTITLE": "Escolhas (2022–2023)",
+          "TYPE": "TEXT",
+          "CONTENT": "Em 2022 criei minha primeira biblioteca, um projeto que buscava informações de jogos na internet. Não finalizei 100%, mas aprendi muito sobre como os sistemas conversam entre si. No fim daquele ano, fiz uma escolha importante: em vez do ensino médio regular, fui pro Técnico em Análise e Desenvolvimento de Sistemas. Os dois anos seguintes foram mais quietos, com mais ideias e aprendizado do que projetos. Meu foco era uma vaga na área, que não veio. Mas o aprendizado ficou."
+        },
+        {
+          "SUBTITLE": "Recomeço (2025–2026)",
+          "TYPE": "TEXT",
+          "CONTENT": "Em 2025 voltei a criar projetos que poderiam me trazer retorno de verdade: aprendi a criar jogos no Roblox e transformei isso no meu TCC. A barreira final não foi o código, foi minha máquina, fraca demais pra aguentar o projeto. Depois disso, um amigo me chamou pra uma plataforma de gestão agrícola com inteligência artificial, que hoje está em validação. Em 2026 entrei na faculdade federal e sigo buscando empreender em novas ideias."
+        }
+      ]
+    },
+    "MANTRAS": {
+      "TITLE": "Mantras",
+      "PAGES": [
+        {
+          "SUBTITLE": null,
+          "TYPE": "LIST",
+          "ITEMS": [
+            "Mal desempenho não significa mal aprendizado, às vezes faz parte da jornada do conhecimento.",
+            "A vida nem sempre é como queremos, é e sempre será uma busca eterna.",
+            "Se importar demais com os outros te dá menos tempo para cuidar de si mesmo.",
+            "Às vezes, não importa o que façamos, nada irá acontecer.",
+            "A habilidade do saber é a dádiva que Deus nos deu; faz bom uso aquele que a utiliza para conhecer."
+          ]
+        }
+      ]
+    },
+    "APRENDIZADOS": {
+      "TITLE": "Aprendizados",
+      "PAGES": [
+        {
+          "SUBTITLE": null,
+          "TYPE": "LIST",
+          "ITEMS": [
+            "Aprender copiando não é vergonha. Vergonha é continuar copiando pra sempre.",
+            "Quem te corrige de graça tá te economizando anos de erro.",
+            "Nem todo projeto precisa ser finalizado pra valer a pena. Às vezes o projeto é só a desculpa pro aprendizado."
+          ]
+        },
+        {
+          "SUBTITLE": null,
+          "TYPE": "LIST",
+          "ITEMS": [
+            "Equipamento fraco atrasa, mas não apaga o que você aprendeu.",
+            "A vaga que não veio em 2023 virou o empreendedor de 2026.",
+            "Desistir da ideia errada também é progresso."
+          ]
+        }
+      ]
+    },
+    "VIRADAS": {
+      "TITLE": "Viradas",
+      "PAGES": [
+        {
+          "SUBTITLE": "O tutorial de bot (2020)",
+          "TYPE": "TEXT",
+          "CONTENT": "Sem querer, minha porta de entrada pra programação. Eu só queria um bot pro meu servidor e saí de lá querendo entender como aquilo funcionava."
+        },
+        {
+          "SUBTITLE": "O banho de água fria (2021)",
+          "TYPE": "TEXT",
+          "CONTENT": "Na primeira comunidade que entrei, fui corrigido com força por quem sabia de verdade. Doeu, mas foi ali que parei de copiar e comecei a entender."
+        },
+        {
+          "SUBTITLE": "A escolha do técnico (2022)",
+          "TYPE": "TEXT",
+          "CONTENT": "Poderia ter ido pro ensino médio regular. Escolhi o caminho profissional, e foi uma das melhores decisões que já tomei."
+        },
+        {
+          "SUBTITLE": "O mês perdido (2025)",
+          "TYPE": "TEXT",
+          "CONTENT": "Perdi quase um mês tentando animar um modelo no Blender até descobrir que era impossível do jeito que eu fazia. Mudei a ideia e segui em frente."
+        },
+        {
+          "SUBTITLE": "O crash (2025)",
+          "TYPE": "TEXT",
+          "CONTENT": "Minha máquina não aguentou o jogo que eu construía. Aprendi que nem toda barreira se resolve com código, e tudo bem."
+        }
+      ]
+    },
+    "HOJE": {
+      "TITLE": "Hoje",
+      "PAGES": [
+        {
+          "SUBTITLE": null,
+          "TYPE": "TEXT",
+          "CONTENT": "Em 2026 estou na faculdade federal de Análise e Desenvolvimento de Sistemas, tocando projetos próprios e em parceria. O quarto escuro com o brilho da tela continua o mesmo. O que mudou foi o tamanho dos sonhos na tela."
+        }
+      ]
+    },
+    "RECADO": {
+      "TITLE": "Recado",
+      "PAGES": [
+        {
+          "SUBTITLE": null,
+          "TYPE": "TEXT",
+          "CONTENT": "Se você tá começando agora e se sente perdido no meio da sopa de letrinhas: eu também estava. Não precisa entender tudo de uma vez, precisa só não parar. O resto vem com o tempo, com os erros e com algumas madrugadas."
+        }
+      ]
+    }
+  }
+}

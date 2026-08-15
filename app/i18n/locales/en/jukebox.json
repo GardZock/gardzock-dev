@@ -1,0 +1,62 @@
+{
+    "IDLE": {
+        "TITLE": "NOT PLAYING",
+        "SONG": "Select a disc to start"
+    },
+    "REDRAGON": {
+        "NAME": "Redragon Bot",
+        "DESCRIPTION": "My first bot, my first code, my biggest idea..."
+    },
+    "AMENS": {
+        "NAME": "AMENS",
+        "DESCRIPTION": "Work in progress, in validation stage, basically a SaaS for workplace health and safety."
+    },
+    "CRUDAPI": {
+        "NAME": "My first API",
+        "DESCRIPTION": "A project I built to test my skills — technically a CRUD app, focused on learning SQL, Express, and other technologies."
+    },
+    "DASHBOARD": {
+        "NAME": "Bot Dashboard",
+        "DESCRIPTION": "My first idea for a full website, built around needs I had at the time — meant to be an all-in-one dashboard."
+    },
+    "FEIRA": {
+        "NAME": "Science Fair Project",
+        "DESCRIPTION": "For a school science fair, I built a face-recognition tool that estimated a person's age through a webcam."
+    },
+    "FIRSTPORTFOLIO": {
+        "NAME": "First Portfolio",
+        "DESCRIPTION": "My first attempt at showcasing my skills — a simple site presenting myself and a few of my main projects."
+    },
+    "HECTARA": {
+        "NAME": "Hectara",
+        "DESCRIPTION": "Built with 2 school friends — an AI-powered SaaS for small-scale farmers."
+    },
+    "LASTPORTFOLIO": {
+        "NAME": "Current Portfolio",
+        "DESCRIPTION": "Needs no introduction — my most ambitious web project so far."
+    },
+    "MPBOT": {
+        "NAME": "Bot with Mercado Pago integration",
+        "DESCRIPTION": "Right after PIX launched (Brazil's instant bank-transfer payment system), a client asked me to build a sales bot with PIX support — I delivered a full Discord sales system."
+    },
+    "MUSICBOT": {
+        "NAME": "Music Bot",
+        "DESCRIPTION": "One of my favorite hobby projects — there was some friendly rivalry over who could build the lightest music bot. I got mine running on just 60MB of RAM."
+    },
+    "RPGBOT": {
+        "NAME": "Tank RPG Bot",
+        "DESCRIPTION": "Built with a lot of effort — one of my biggest projects, meant to showcase a library I was developing at the time."
+    },
+    "SECONDS": {
+        "NAME": "60 Seconds on Roblox",
+        "DESCRIPTION": "A Roblox game I'm quite proud of. Though unfinished, it taught me many new skills — it's exactly what the name suggests, reimagined in a different universe."
+    },
+    "VSCODE": {
+        "NAME": "Discloud VS Code extension",
+        "DESCRIPTION": "The platform owner invited me to build this extension. Reading the VS Code docs was a struggle, but it taught me a lot and led to a good friendship."
+    },
+    "WARCORD": {
+        "NAME": "Warcord",
+        "DESCRIPTION": "By far my biggest and best-organized project — a library that consumed the API of every WarGaming game."
+    }
+}

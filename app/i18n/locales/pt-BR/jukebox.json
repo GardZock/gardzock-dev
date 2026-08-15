@@ -1,0 +1,62 @@
+{
+    "IDLE": {
+        "TITLE": "SEM MÚSICAS",
+        "SONG": "Selecione um disco para começar"
+    },
+    "REDRAGON": {
+        "NAME": "Redragon Bot",
+        "DESCRIPTION": "Meu primeiro bot, meu primeiro código, minha maior ideia..."
+    },
+    "AMENS": {
+        "NAME": "AMENS",
+        "DESCRIPTION": "Projeto em construção, em fase de validação, básicamente um SaaS voltado a SST."
+    },
+    "CRUDAPI": {
+        "NAME": "Minha primeira API",
+        "DESCRIPTION": "Um projeto que fiz para testar meus conhecimentos, em termos técnicos seria um CRUD, voltado a compreender SQL, Express e outras tecnologias."
+    },
+    "DASHBOARD": {
+        "NAME": "Dashboard de Bots",
+        "DESCRIPTION": "Primeira ideia de um site completo que tive, compátivel com as necessidades que eu tinha, a intenção era ser um dashboard para todos."
+    },
+    "FEIRA": {
+        "NAME": "Projeto Feira",
+        "DESCRIPTION": "Durante uma feira tecnológica da escola, desenvolvi um identificador de pessoas, ele estimava a idade da pessoa, identificando-a pela face através de uma webcam."
+    },
+    "FIRSTPORTFOLIO": {
+        "NAME": "Primeiro Portfolio",
+        "DESCRIPTION": "Minha primeira expressão das minhas habilidades, tinha um conceito humilde de me apresentar e mostrar alguns dos principais projetos que eu tinha."
+    },
+    "HECTARA": {
+        "NAME": "Hectara",
+        "DESCRIPTION": "Um projeto que desenvolvi em conjunto com 2 amigos da escola, era para ser um SaaS com IA voltado à agricultura de pequenas propriedades."
+    },
+    "LASTPORTFOLIO": {
+        "NAME": "Portfolio Atual",
+        "DESCRIPTION": "Bem, creio que dispensa apresentações, é o projeto mais ousado na Web que tive até hoje."
+    },
+    "MPBOT": {
+        "NAME": "Bot Mercado Pago",
+        "DESCRIPTION": "Logo que lançou o PIX, um cliente me pediu para desenvolver um bot de vendas com a integração de um sistema de PIX, então entreguei um sistema completo de vendas no Discord."
+    },
+    "MUSICBOT": {
+        "NAME": "Bot de Música",
+        "DESCRIPTION": "Um dos meus hobbies mais divertidos, havia um leve ar de competição sobre quem construia o bot de música mais leve, consegui fazer ele rodar com 60MB de RAM."
+    },
+    "RPGBOT": {
+        "NAME": "Bot de RPG sobre Tanques",
+        "DESCRIPTION": "Desenvolvido com muito sofrimento, foi um dos meus maiores projetos, a ideia era usar ele para demonstrar o poder da lib que estava construindo na época."
+    },
+    "SECONDS": {
+        "NAME": "60's Seconds no Roblox",
+        "DESCRIPTION": "Um jogo no roblox do qual me orgulho muito, apesar de não finalizado, ele me ensinou diversas novas habilidades, ele é o que o próprio nome diz, mas reimaginado em outro universo."
+    },
+    "VSCODE": {
+        "NAME": "Extensão Discloud VS Code",
+        "DESCRIPTION": "O Dono da plataforma me convidou para desenvolver a extensão para a plataforma, foi uma luta ler a documentação do VS Code, mas no final me ensinou e fiz uma amizade legal."
+    },
+    "WARCORD": {
+        "NAME": "Warcord",
+        "DESCRIPTION": "Sem dúvidas o meu maior projeto e mais organizado que já produzi, uma biblioteca que consumia a API de todos os jogos da produtora WarGaming."
+    }
+}

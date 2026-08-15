@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-main: #050807;
+  --color-bg-secondary: #0B1711;
+  --color-surface: #0F1F17;
+  --color-surface-elevated: #13291E;
+  --color-text-main: #E8FFF1;
+  --color-text-secondary: #92A99B;
+  --color-accent: #39FF88;
+  --color-accent-sec: #00C853;
+  --color-accent-soft: #7CFFB2;
+  --color-border-subtle: rgba(57, 255, 136, 0.22);
+  --color-danger: #FF4D6D;
+  --color-warning: #FFE66D;
+  --color-tech-blue: #38BDF8;
+
+  --font-sans: var(--font-geist-sans), Inter, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), JetBrains Mono, IBM Plex Mono, monospace;
+}
+
+@supports (animation-timeline: view()) {
+  .scroll-animate-card {
+    animation: fade-in-out auto linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 30%, exit 70% exit 95%;
+  }
+
+  @keyframes fade-in-out {
+    0% {
+      opacity: 0;
+      transform: translateY(20px) scale(0.97);
+    }
+    30%, 70% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-20px) scale(0.97);
+    }
+  }
+}
+
+/* ── Scroll Hint Animations ───────────────────────────────── */
+@keyframes hint-float {
+  0%, 100% { transform: translateY(0);    }
+  50%       { transform: translateY(-6px); }
+}
+
+@keyframes hint-glow-text {
+  0%, 100% { text-shadow: 0 0 6px rgba(57,255,136,0.3); opacity: 0.7; }
+  50%       { text-shadow: 0 0 18px rgba(57,255,136,0.9), 0 0 40px rgba(57,255,136,0.4); opacity: 1; }
+}
+
+@keyframes hint-ring-ping {
+  0%   { transform: scale(1);   opacity: 0.6; }
+  100% { transform: scale(2.2); opacity: 0;   }
+}
+
+@keyframes hint-scroll-flash {
+  0%   { box-shadow: 0 0 0 0 rgba(57,255,136,0.7); transform: scale(1);    }
+  40%  { box-shadow: 0 0 0 12px rgba(57,255,136,0); transform: scale(1.18); }
+  60%  { transform: scale(0.95); }
+  80%  { transform: scale(1.08); }
+  100% { box-shadow: 0 0 0 0 rgba(57,255,136,0);   transform: scale(1);    }
+}
+
+@keyframes chevron-fall {
+  0%        { transform: translateY(-4px); opacity: 0; }
+  40%, 60%  { transform: translateY(0);   opacity: 1; }
+  100%      { transform: translateY(4px); opacity: 0; }
+}
+
+.hint-float      { animation: hint-float      2.8s ease-in-out infinite; }
+.hint-glow-text  { animation: hint-glow-text  2.8s ease-in-out infinite; }
+.hint-ring-ping  { animation: hint-ring-ping  2.8s ease-in-out infinite; }
+.hint-scroll-flash { animation: hint-scroll-flash 0.55s ease-out forwards; }
+.chevron-fall    { animation: chevron-fall    1.4s ease-in-out infinite; }
+.chevron-fall-2  { animation: chevron-fall    1.4s ease-in-out 0.25s infinite; }
+.chevron-fall-3  { animation: chevron-fall    1.4s ease-in-out 0.5s  infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
