@@ -1,0 +1,158 @@
+{
+    "NAV": {
+        "TAB_NAME": "My Portfolio"
+    },
+    "HEADER": {
+        "SESSION_TOKEN": "Session_Token: Active_Dev",
+        "TITLE_BUILDING": "Building",
+        "TITLE_WEB_SYSTEMS": "web systems",
+        "TITLE_AND": "game ideas and",
+        "TITLE_MODELS_3D": "3D models.",
+        "BIO_PART1": "Im",
+        "BIO_NAME": "Miguel Turco",
+        "BIO_PART2": ", operating in the digital realm as",
+        "BIO_TAG": "@GardZock",
+        "BIO_PART3": ". A Full-Stack developer bridging the gap between engineering, game development, and immersive art.",
+        "TYPEWRITER": {
+            "INITIALIZING": "> Initializing full-stack modules...",
+            "LOADING_ASSETS": "> Loading 3D assets & environments...",
+            "COMPILING_LOGIC": "> Compiling game logic..."
+        },
+        "SCROLL_DOWN": "Scroll Down"
+    },
+    "STORYLINE": {
+        "TITLE": "My Storyline",
+        "SUBTITLE": "Explore my journey from 2020 to 2026 and discover how I evolved in my career.",
+        "2020": {
+            "TITLE": "First Contact with Code",
+            "DESCRIPTION": "Around October, during the pandemic, I was 12 years old and had only one thought in mind: 'What should I be when I grow up?' So, I chose programming, but directed toward an environment that actually impacted me. In this case, it meant creating a Bot on the platform I used the most at the time: Discord."
+        },
+        "2021": {
+            "TITLE": "First Deploys & Launches",
+            "DESCRIPTION": "I had evolved considerably, both in mindset and knowledge, so I ended up launching my first complete projects. Looking to make a difference, I created Red Dragon, a Bot whose main function was to manage the entire server and prevent attacks, among other features. I launched other Bots as well, like a music one, but none of these projects went much further."
+        },
+        "2022": {
+            "TITLE": "Web Development & Third-Party Projects",
+            "DESCRIPTION": "Right at the beginning of the year, I realized the Bot niche wasn't as promising as I thought, and I felt the desire to expand my horizons. Just before the AI boom, I started studying Web Development with Next.js and finished my first Bot-focused Dashboard. I also launched other ideas this year, including my biggest project to date: WarCord, an NPM library aimed at integrating an API from the developer WarGaming. During this same year, I took part in creating projects for third parties, the main ones being a VS Code Extension for Discloud and a Store Bot with Pix integration (which was quite a novelty at the time)."
+        },
+        "2023": {
+            "TITLE": "Professional Networking",
+            "DESCRIPTION": "I was professionally stagnant. I found myself dependent on a single network of contacts that wasn't fulfilling my financial goals or landing me a professional job. I started looking for places where I could connect with more developers. It was around this time that I began studying the behavior of platforms like LinkedIn and other recruitment sites. That same year, I enrolled in a technical high school in pursuit of building a local network of contacts."
+        },
+        "2024": {
+            "TITLE": "Consolidation & Product Vision",
+            "DESCRIPTION": "I sought to understand the real, local pain points of my city, while also expanding my knowledge with the latest market technologies. I tried to build ideas that actually solved everyday problems. Instead of focusing on the sheer volume of deliveries, I turned this year into a period of technical consolidation and research. I maintained and refined what was already working, deepened my product vision, and structured the strategic and networking foundation needed to take my next steps in a more directed, scalable, and less impulsive way."
+        },
+        "2025": {
+            "TITLE": "Game Dev & Prototypes",
+            "DESCRIPTION": "Reviving my childhood creative passion, I decided to steer my studies toward digital game development. Facing severe hardware limitations that prevented me from using conventional engines, I had to be adaptable and chose Roblox Studio as my creation platform. The year was a true testing lab: I developed several prototypes, tackled complex learning curves, and iterated on various mechanics. The result of this filtering process was the conception of an innovative project, which successfully passed the testing phase and is currently in final refinement, ready to be launched soon."
+        },
+        "2026": {
+            "TITLE": "Present & Future",
+            "DESCRIPTION": "This year marks a strategic turning point. I started my degree in Systems Analysis and Development and moved to a new city to expand my networking and actively seek new challenges in the job market. Parallel to my academic formalization, I dove deep into studying business models. The main focus now is merging code and entrepreneurship: I am actively architecting and validating new SaaS platform ideas, with development at full throttle for solid launches expected later this year."
+        }
+    },
+    "GRAPH": {
+        "SUB_FULLSTACK": "full-stack dev",
+        "SUB_WEB_FRAMEWORK": "web framework",
+        "SUB_LANGUAGE": "language",
+        "SUB_3D_GRAPHICS": "3D graphics",
+        "SUB_GAME_DEV": "game dev",
+        "SUB_3D_ART": "3D art",
+        "SUB_RUNTIME": "runtime",
+        "SUB_DATABASE": "database"
+    },
+    "MINI_DISCLOUD": {
+        "PLANS": "Plans",
+        "SERVICES": "Services",
+        "TOOLS": "Tools",
+        "DOCS": "Documentation",
+        "TYPEWRITER": {
+            "SITE": "Your website",
+            "DB": "Your DB",
+            "BOT": "Your Bot",
+            "API": "Your API"
+        },
+        "ONLINE_NOW": "Online Now!",
+        "SUBTITLE": "Transforming how you host your applications",
+        "USERS_COUNT": "over 200k users",
+        "START_FREE": "Get started for free"
+    },
+    "MINI_VSCODE": {
+        "FILE": "File",
+        "EDIT": "Edit",
+        "TERMINAL": "Terminal",
+        "EXPLORER": "EXPLORER",
+        "FIRST_LINES": "First lines of code"
+    },
+    "MINI_LIVE_SERVER": {
+        "PORT": "Port: 5500",
+        "RENDERED_VIA": "Rendered via local live reload server."
+    },
+    "MINI_LINKEDIN": {
+        "SEARCH": "Search...",
+        "HOME": "Home",
+        "MY_NETWORK": "My Network",
+        "JOBS": "Jobs",
+        "MESSAGES": "Messaging",
+        "HEADLINE": "Full-stack Developer | Next.js, TypeScript & Node.js | Systems Analysis and Development Technician",
+        "LOCATION": "Paraná, Brazil",
+        "CONTACT_INFO": "Contact info",
+        "CONNECTIONS": "1,628 connections",
+        "OPEN_TO": "Open to",
+        "MESSAGE": "Message",
+        "UNIVERSITY": "Federal Technological University of Paraná"
+    },
+    "MINI_GAME_DEV": {
+        "SYNC_SCRIPTS": "sync scripts... building world...",
+        "CANCEL": "Cancel"
+    },
+    "MINI_SAAS": {
+        "ACTIVE_PROJECT": "active_project: main_cluster",
+        "CLIENTS": "Clients",
+        "ACTIVE_COUNT": "32 ACTIVE",
+        "HEALTH": "Health",
+        "DEPLOY_PIPELINE": "deploy_pipeline: active",
+        "DEPLOY": "DEPLOY",
+        "STATUS": "STATUS",
+        "LOAD": "LOAD",
+        "ACTIVE": "● ACTIVE"
+    },
+    "MINI_GITHUB": {
+        "VIEW_OVERVIEW": "Overview",
+        "VIEW_PRIORITY": "By priority",
+        "NEW": "+ New",
+        "FILTER_PLACEHOLDER": "Filter by keyword",
+        "COL_PREP": "In Preparation",
+        "COL_IN_PROGRESS": "In Progress",
+        "COL_DONE": "Done",
+        "EMPTY_PREP": "This item has not been assigned yet.",
+        "EMPTY_IN_PROGRESS": "This task is ready to be assigned.",
+        "EMPTY_DONE": "This item has been completed.",
+        "TASK_1": "Setup: Project Structure",
+        "TASK_2": "Design: Login Screen",
+        "TASK_3": "Docs: Initial Structure",
+        "ADD_ITEM": "+ Add item...",
+        "SELECTED": "selected",
+        "SELECT_DETAILS": "Select an item to view details",
+        "ITEMS_COUNT": "items"
+    },
+    "EOF_HINT": {
+        "LABEL": "// EOF — keep scrolling",
+        "LINE1": "You have reached the end of the interface.",
+        "LINE2": "But this is still",
+        "LINE3": "running inside something bigger.",
+        "LINE4": "Keep scrolling."
+    },
+    "CONTACT": {
+        "TITLE": "Connect With Me",
+        "SUBTITLE": "Let's build something amazing together. Get in touch through my networks or send a direct email.",
+        "LINKEDIN_DESC": "Professional Network & Connections",
+        "GITHUB_DESC": "Repositories & Open Source Projects",
+        "INSTAGRAM_DESC": "Behind the Scenes, Projects & Daily Content",
+        "EMAIL_DESC": "Direct Contact & Inquiries",
+        "COPIED": "Copied!",
+        "CLICK_TO_COPY": "Click to copy email"
+    },
+    "ADBLOCK_NOTICE": "Disable AdBlock for music!"
+}

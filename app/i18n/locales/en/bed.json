@@ -1,0 +1,127 @@
+{
+  "NAV": {
+    "HISTORIA": "history",
+    "MANTRAS": "mantras",
+    "APRENDIZADOS": "learnings",
+    "VIRADAS": "turning points",
+    "HOJE": "today",
+    "RECADO": "message"
+  },
+  "PAGINATION": {
+    "PAGE": "Page",
+    "OF": "of",
+    "PREV": "Previous",
+    "NEXT": "Next"
+  },
+  "SECTIONS": {
+    "HISTORIA": {
+      "TITLE": "History",
+      "PAGES": [
+        {
+          "SUBTITLE": "The Beginning (2020–2021)",
+          "TYPE": "TEXT",
+          "CONTENT": "During the 2020 pandemic, I tried creating Minecraft servers, but got stuck in the alphabet soup of configuration files. I ended up migrating to Discord and realized servers with custom bots stood out more. Without even knowing I needed to program, I copied a YouTube tutorial and made my first bot. In 2021, after a few frustrated attempts, I managed to host my bot online for the first time. That was when I asked for help in a community and got a reality check: I realized I knew nothing. Instead of giving up, I dropped the copy-and-paste and started building things from scratch."
+        },
+        {
+          "SUBTITLE": "Choices (2022–2023)",
+          "TYPE": "TEXT",
+          "CONTENT": "In 2022, I created my first library, a project that fetched game information from the internet. I didn't finish it 100%, but I learned a lot about how systems communicate with each other. At the end of that year, I made an important choice: instead of regular high school, I enrolled in a Technical High School for Systems Analysis and Development. The next two years were quieter, with more ideas and learning than finished projects. My focus was securing a job in the field, which didn't happen. But the learning stayed."
+        },
+        {
+          "SUBTITLE": "Fresh Start (2025–2026)",
+          "TYPE": "TEXT",
+          "CONTENT": "In 2025, I returned to building projects that could bring real results: I learned game dev in Roblox and turned that into my final graduation thesis. The ultimate barrier wasn't code, but my hardware, which was too weak to handle the project. After that, a friend invited me to work on an agricultural management platform powered by AI, currently in validation. In 2026, I entered a federal university and continue striving to build new entrepreneurial ideas."
+        }
+      ]
+    },
+    "MANTRAS": {
+      "TITLE": "Mantras",
+      "PAGES": [
+        {
+          "SUBTITLE": null,
+          "TYPE": "LIST",
+          "ITEMS": [
+            "Poor performance doesn't mean poor learning; sometimes it's just part of the knowledge journey.",
+            "Life isn't always as we want it to be; it is and always will be an eternal pursuit.",
+            "Caring too much about others leaves you with less time to take care of yourself.",
+            "Sometimes, no matter what we do, nothing will happen.",
+            "The capacity to learn is a gift given to us by God; those who use it to seek knowledge make good use of it."
+          ]
+        }
+      ]
+    },
+    "APRENDIZADOS": {
+      "TITLE": "Learnings",
+      "PAGES": [
+        {
+          "SUBTITLE": null,
+          "TYPE": "LIST",
+          "ITEMS": [
+            "Learning by copying is no shame. The shame is to keep copying forever.",
+            "Someone who corrects you for free is saving you years of mistakes.",
+            "Not every project needs to be finished to be worth it. Sometimes the project is just the excuse for learning."
+          ]
+        },
+        {
+          "SUBTITLE": null,
+          "TYPE": "LIST",
+          "ITEMS": [
+            "Weak hardware slows you down, but it doesn't erase what you learned.",
+            "The job that didn't come in 2023 shaped the entrepreneur of 2026.",
+            "Giving up on the wrong idea is also progress."
+          ]
+        }
+      ]
+    },
+    "VIRADAS": {
+      "TITLE": "Turning Points",
+      "PAGES": [
+        {
+          "SUBTITLE": "The Bot Tutorial (2020)",
+          "TYPE": "TEXT",
+          "CONTENT": "Unintentionally, my gateway into programming. I just wanted a bot for my server and came out wanting to understand how it all worked."
+        },
+        {
+          "SUBTITLE": "The Cold Shower (2021)",
+          "TYPE": "TEXT",
+          "CONTENT": "In the first community I joined, I was harshly corrected by people who really knew their stuff. It hurt, but that's where I stopped copying and started truly understanding."
+        },
+        {
+          "SUBTITLE": "Choosing Technical School (2022)",
+          "TYPE": "TEXT",
+          "CONTENT": "I could have gone to regular high school. I chose the vocational track, and it was one of the best decisions I ever made."
+        },
+        {
+          "SUBTITLE": "The Lost Month (2025)",
+          "TYPE": "TEXT",
+          "CONTENT": "I lost almost a month trying to animate a model in Blender until I found out it was impossible the way I was doing it. I pivoted the idea and moved on."
+        },
+        {
+          "SUBTITLE": "The Crash (2025)",
+          "TYPE": "TEXT",
+          "CONTENT": "My machine couldn't handle the game I was building. I learned that not every obstacle is solved with code, and that's okay."
+        }
+      ]
+    },
+    "HOJE": {
+      "TITLE": "Today",
+      "PAGES": [
+        {
+          "SUBTITLE": null,
+          "TYPE": "TEXT",
+          "CONTENT": "In 2026, I'm at the federal university studying Systems Analysis and Development, running personal and collaborative projects. The dark room with the screen glow remains the same. What changed is the scale of the dreams on the screen."
+        }
+      ]
+    },
+    "RECADO": {
+      "TITLE": "Message",
+      "PAGES": [
+        {
+          "SUBTITLE": null,
+          "TYPE": "TEXT",
+          "CONTENT": "If you're starting out now and feel lost in the alphabet soup: so was I. You don't need to understand everything at once, you just need to keep going. The rest comes with time, mistakes, and late nights."
+        }
+      ]
+    }
+  }
+}
