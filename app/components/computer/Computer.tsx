@@ -7,6 +7,7 @@ import { Keyboard } from "./Keyboard";
 import { Mouse } from "./Mouse";
 import { ComputerWebContent } from "./ComputerWebContent";
 import { useResponsiveCamera } from "../../hooks/useResponsiveCamera";
+import { useComputer } from "./ComputerContext";
 
 const monitorScreenMaterial = new THREE.MeshStandardMaterial({ color: "white" });
 const pcGlassMaterial = new THREE.MeshStandardMaterial({
@@ -27,7 +28,7 @@ const getComputerMaterial = (nodeName: string, originalMaterial: THREE.Material 
 
 export const Computer = ({ nodes }: { nodes: THREE.Mesh[] }) => {
   const [hovered, setHovered] = useState(false);
-  const [isLocked, setLocked] = useState(true);
+  const { isComputerLocked: isLocked, setIsComputerLocked: setLocked } = useComputer();
   const [pulsed, setPulsed] = useState(false);
   const [milestone, setMilestone] = useState(0);
   const pulseTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);

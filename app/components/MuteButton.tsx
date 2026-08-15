@@ -4,16 +4,24 @@ import React from "react";
 import { IoVolumeHighOutline, IoVolumeMuteOutline } from "react-icons/io5";
 import { FiShieldOff } from "react-icons/fi";
 import { useAudio } from "./AudioContext";
+import { useComputer } from "./computer/ComputerContext";
 import { useT } from "next-i18next/client";
 
 export const MuteButton = () => {
   const { isMuted, toggle, showAdBlockNotice } = useAudio();
+  const { isComputerLocked } = useComputer();
   const { t } = useT("portfolio");
 
   const isExpanded = showAdBlockNotice;
 
   return (
-    <div className="fixed top-6 left-6 z-50 flex items-center">
+    <div
+      className={`fixed top-6 left-6 z-50 flex items-center transition-all duration-500 ease-in-out ${
+        isComputerLocked
+          ? "opacity-0 pointer-events-none -translate-y-2"
+          : "opacity-100 pointer-events-auto translate-y-0"
+      }`}
+    >
       <button
         onClick={toggle}
         title={isMuted ? "Ativar som" : "Mutar"}
