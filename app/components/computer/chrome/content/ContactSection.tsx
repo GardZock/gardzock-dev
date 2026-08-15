@@ -75,10 +75,6 @@ export const ContactSection = () => {
     <section className="w-full bg-[#0a0a0d] border-t border-white/10 py-16 px-6 sm:px-12 lg:px-20 text-white selection:bg-green-500/30">
       <div className="max-w-6xl mx-auto flex flex-col items-center">
         <div className="flex flex-col items-center text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs sm:text-sm font-mono tracking-wide mb-4">
-            <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-            <span>// SYSTEM.CONNECT --INITIALIZE_COMMUNICATION</span>
-          </div>
 
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-linear-to-r from-white via-gray-200 to-green-400 mb-4">
             {t("CONTACT.TITLE")}
